@@ -6,7 +6,6 @@ import './index.css'
 import 'materialize-css/dist/css/materialize.css'
 
 import App from './app/App'
-import registerServiceWorker from './registerServiceWorker'
 
 ReactDOM.render(
     <HashRouter>
@@ -14,5 +13,3 @@ ReactDOM.render(
     </HashRouter>,
     document.getElementById('root')
 )
-
-registerServiceWorker()
