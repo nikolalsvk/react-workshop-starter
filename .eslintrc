@@ -1,15 +1,15 @@
 {
     "extends": [
-        "standard",
-        "plugin:jest/recommended"
+        "react-app"
     ],
     "plugins": [
         "import",
-        "jest"
+        "react",
+        "prettier"
     ],
     "env": {
-        "node": true,
-        "jest/globals": true
+        "jest": true,
+        "es6": true
     },
     "rules": {
         "semi": [
@@ -30,7 +30,7 @@
                 "SwitchCase": 1
             }
         ],
-        "space-before-function-paren": "off",
+        "space-before-function-parent": "off",
         "no-use-before-define": [
             "error",
             {
@@ -43,6 +43,9 @@
             "error",
             "after"
         ],
-        "padded-blocks": "off"
+        "padded-blocks": "off",
+        "prettier/prettier": [
+            "error"
+        ]
     }
 }
