@@ -1,5 +1,5 @@
 {
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "eslint.autoFixOnSave": true,
     "eslint.alwaysShowStatus": true,
     "explorer.openEditors.visible": 0,
@@ -11,12 +11,16 @@
     "editor.minimap.enabled": false,
     "zenMode.centerLayout": false,
     "zenMode.hideStatusBar": false,
-    "files.autoSave": "onFocusChange",
     "breadcrumbs.enabled": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.panel.location": "bottom",
+    "files.autoSave": "onFocusChange",
+    "files.insertFinalNewline": true,
     "files.associations": {
         "*.js": "javascript"
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
     }
 }
