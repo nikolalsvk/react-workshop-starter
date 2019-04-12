@@ -5,7 +5,11 @@ import Post from '../models/Post'
 
 class PostsService {
     fetchPosts() {
-        return api.get('/posts').then(postsArray => {
+        const params = {
+            _limit: 10
+        }
+
+        return api.get('/posts', params).then(postsArray => {
             console.log('PostsService', 'fetchPosts', postsArray)
             const posts = postsArray.map(post => {
                 return new Post(post.id, post.title, post.body)

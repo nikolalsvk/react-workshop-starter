@@ -6,10 +6,13 @@ import './index.css'
 import 'materialize-css/dist/css/materialize.css'
 
 import App from './app/App'
+import AppStore from './app/AppStore'
 
 ReactDOM.render(
     <HashRouter>
-        <App />
+        <AppStore>
+            <App />
+        </AppStore>
     </HashRouter>,
     document.getElementById('root')
 )
