@@ -3,12 +3,13 @@ import { Route } from 'react-router-dom'
 
 import AboutPage from './About/AboutPage'
 import PostsPage from './Posts/PostsPage'
+import PostsPageHooks from './Posts/PostsPageHooks'
 
 const Main = () => {
     return (
         <main className="container">
             <Route path="/about" component={AboutPage} />
-            <Route exact path="/" component={PostsPage} />
+            <Route exact path="/" component={PostsPageHooks} />
         </main>
     )
 }
